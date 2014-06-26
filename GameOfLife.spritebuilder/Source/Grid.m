@@ -18,5 +18,14 @@ static const int GRID_COLUMNS = 10;
     float _cellWidth;
     float _cellHeight;
 }
+- (void)onEnter
+{
+    [super onEnter];
+    
+    [self setupGrid];
+    
+    // accept touches on the grid
+    self.userInteractionEnabled = YES;
+}
 
 @end
