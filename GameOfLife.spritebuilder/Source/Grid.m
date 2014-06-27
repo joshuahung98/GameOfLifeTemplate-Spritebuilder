@@ -160,6 +160,7 @@ static const int GRID_COLUMNS = 10;
             if(currentCreature.livingNeighbors == 3)
             {
                 currentCreature.isAlive = true;
+                _numAlive++;
             }
             else if(currentCreature.livingNeighbors <= 1 || currentCreature.livingNeighbors >=4)
             {
@@ -168,6 +169,7 @@ static const int GRID_COLUMNS = 10;
         }
     }
   }
+    _totalAlive = numAlive;
 }
 @end
 
