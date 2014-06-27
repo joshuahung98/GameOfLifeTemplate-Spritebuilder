@@ -16,9 +16,9 @@
     // 'visible' is a property of any class that inherits from CCNode. CCSprite is a subclass of CCNode, and Creature is a subclass of CCSprite, so Creatures have a visible property
     self.visible = _isAlive;
 }
-- (instancetype)initCreature {
+- (Creature)initCreature {
     // since we made Creature inherit from CCSprite, 'super' below refers to CCSprite
-    self = [super initWithSpriteFrame:@"GameOfLifeAssets/Assets/bubble.png"];
+    self = [super initWithImageNamed:@"GameOfLifeAssets/Assets/bubble.png"];
     
     if (self) {
         self.isAlive = NO;
