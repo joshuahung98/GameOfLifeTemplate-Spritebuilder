@@ -169,6 +169,7 @@ static const int GRID_COLUMNS = 10;
         }
     }
   }
+    numAlive = numAlive++;
     _totalAlive = numAlive;
 }
 @end
